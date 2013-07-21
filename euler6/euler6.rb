@@ -10,10 +10,14 @@
 # Find the difference between the sum of the squares of the first one
 # hundred natural numbers and the square of the sum.
 
-res1 = 0
-res2 = 0
-for i in 1..100
-  res1+=i*i
-  res2+=i
+def calc
+  res1 = 0
+  res2 = 0
+  for i in 1..100
+    res1+=i*i
+    res2+=i
+  end
+  res2*res2 - res1
 end
-puts res2*res2 - res1
+
+puts calc()
